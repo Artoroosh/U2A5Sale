@@ -1,7 +1,7 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * Corbin Nash
+ * 21/03/2018
+ * This program calculatees a 10% discount on a sale above ten dollars
  */
 
 package ics3u_unit2_programs_sale;
@@ -143,11 +143,11 @@ public class ICS3U_UNIT2_PROGRAMS_Sale extends javax.swing.JFrame {
   
         if (aPurchase > 10) 
         {
-            dAmount = aPurchase*0.10;
+            dAmount = aPurchase*0.10; //gets 10% of the purchase made
         }
         else dAmount = 0;
         
-           dPrice = aPurchase-dAmount;
+           dPrice = aPurchase-dAmount; //Calculates final price
           discountAmountLabel.setText(x.format(dAmount));
           discountPriceLabel.setText(x.format(dPrice));
     }//GEN-LAST:event_caluculateButtonActionPerformed
